@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09 javascript String </title>
+    <script>
+        /*
+            charAt(index) : index에 해당하는 문자를 반환
+            indexOf("찾을 문자") : 제일 먼저 일치하는 문자 인덱스를 반환, 없으면 -1을 반환
+            replace("찾을 문자", "변경할 문자") : 찾을 문자 하나를 찾아 다른 문자로 변경하여 반환
+            replaceAll("찾을 문자", "변경할 문자") : 찾을 문자를 전부 찾아 달느 문자로 변경하여 반환
+            split("기준 문자") : 문자를 기준으로 문자열을 나눠 배열로 반환
+            trim() : 앞뒤 공백을 제거 후 반환
+        */
+
+        var str = "Hello World";
+        console.log(str.charAt(0));
+        console.log(str.indexOf());
+        console.log(str.replace('b', 'a'));
+        console.log(str.split(' '));
+        console.log("    테스트 문자열 ");
+        console.log("      테스트 문자열      ".trim());
+        console.log(str.length);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>16 functon1</title>
+<script type="text/javascript">
+    function check(){
+       // alert('check() 함수 실행');
+       // id 값으로 가져오기
+       var id = document.getElementsById("id").value;
+       var pw = document.getElementsById("password").value;
+       console.log(id);
+       console.log(pw);
+
+       // name 으로 가져오기
+       id = console.log(document.getElementsByName("id")[0].value);
+       pw = console.log(document.getElementsByName("password")[0].value);
+       console.log(id);
+       console.log(pw); 
+
+       // class로 가져오기
+       id = console.log(document.getElementsByClassName("id")[0].value); 
+       pw = console.log(document.getElementsByClassName("pw")[0].value); 
+       console.log(id);
+       console.log(pw);
+
+    //    // 자바스크립트 유효성 체크
+    //    // 처리조건 1. 아이디와 패스워드는 길이가 5 ~ 10자리 사이여야 한다.
+    //    if (id.length < 5 || id.length > 10) {
+    //        alert('ID의 길이는 5 ~ 10자리 사이여야 합니다.');
+    //    }
+       
+    //    if (pw.length < 5 || pw.length > 10) {
+    //        alert('PW의 길이는 5 ~ 10자리 사이여야 합니다.');
+    //    }
+
+    //    // 처리조건 2. 패스워드가 '12345'이면 페이지를 www.naver.com로 이동하고,
+    //    // 패스워드가 다르면 ID, PW가 일치하지 않는다고 경고창을 출력한다.
+    //    if( pw == '1234'){
+    //        location.href="http://www.naver.com";
+    //    }else{
+    //     alert('ID, PW가 일치하지 않습니다.');
+    //    }
+       
+       // radio 버튼
+       console.log(document.getElementsByName(gender)[0].Checked)
+       console.log(document.getElementsByName(gender)[1].Checked)
+
+       document.getElementsByName("gender")[1].Checked= true;
+       document.getElementsById("id").value="abcde";
+
+    }
+
+
+</script>
+</head>
+<body>
+    <label for="id">ID</label>
+    <input type="text" class="id" name="id" id="id"><br>
+    <label for="password">PW</label>
+    <input type="password" class="pw" name="password" id="password"><br>
+    <input type="button" value="폼 체크" onclick="check()">
+
+    남자
+    <input type="radio" name="gender" value="male">
+    여자
+    <input type="radio" name="gender" value="female">
+    <input type="button" value="폼 체크" onclick="check()">
+</body>
+</html>

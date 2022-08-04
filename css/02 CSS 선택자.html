@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 선택자</title>
+<style type = "text/css">
+p{
+text-align: center;
+color: red;
+}
+/*,: class를 지정"*/
+.center{
+text-align: right;
+color: blue;
+}
+/* # : id를 지정*/
+/* 문단을 왼쪽 정렬, 색깔을 green으로 변경ㄷ */
+#center{
+text-align: left;
+color: green;
+}
+
+/* 그룹선택자 : 여러 선택자를 한번에 지정*/
+h1, p{
+color:red;
+text-align: center;
+font-size:30px;
+}
+/*자손 (자식, 손자)선택*/
+p b{
+color: blue;
+}
+
+</style>
+</head>
+<body>
+<p>이상은 되려니와, 구하지 피가 청춘 바이며, 교향악이다. 위하여서, 것은 사랑의 사람은 것이다.</p>
+
+<p class = "center">때에, 피는 뼈 것이다.보라, 말이다. 보이는 못할 심장은 피가 않는 봄바람이다.</p>
+
+<p id="center">구하지 갑 새가 듣는다. 위하여서 인생에 새가 인간은 있음으로써 어디 많이 천자만홍이 뿐이다 </p>
+
+<div class="center">소담스러운 풀밭에 이상은 품으며, 생의 얼마나 없는 가슴이 칼이다.</div>
+
+<h1>날카로우나 곳으로 그들의 곧 소담스러운 만물은 고행을 이것이다.</h1>
+
+<p>청춘이 <b>용기가 <span>같지</span> 것이</b> 황금시대다</p>
+</body>
+</html>

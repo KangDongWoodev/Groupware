@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 16 CSS 가로 배치하기(clear)</title>
+<style type="text/css">
+.parent{
+border: 10px solid red;
+width: 600px;
+}
+
+.top{
+background-color: purple;
+height: 50px;
+}
+
+.left{
+border: 2px solid black;
+box-sizing: border-box;
+background-color: skyblue;
+width: 200px;
+height: 100px;
+float: left;
+}
+
+.right{
+background-color: orange;
+width: 400px;
+height: 100px;
+float: right;
+}
+
+/*시멘틱 태그-역할이 없음 자체로 의미가 있는 태그임
+<header>,<section>,<article>,<footer>,<nav>
+*/
+.claer{
+background-color: purple;
+height : 50px;
+clear: both;
+}
+</style>
+</head>
+<body>
+<div class="parent">
+<div class="top">float: none</div>
+<div class="left">float: left</div>
+<div class="right">float: right</div>
+<div class="clear">clear: both</div>
+
+</div>
+</body>
+</html>

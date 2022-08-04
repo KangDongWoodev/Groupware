@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>15 CSS 가로 배치하기</title>
+<style type="text/css">
+.parent{
+border: 1px solid red;
+width: 600px;
+height: 200px;
+text-align:center;/*인라인 요소, 인라인 블록에 적용*/
+}
+
+.child{
+background-color: gold;
+width: 200px;
+height: 200px;
+display: inline-block;
+/*float : right;*/ /*해당요소를 공중으로 뜨위는 효과 부모가 없는 취급됨*/
+/*margin: auto;* /*블록 요소에만 적용*/
+}
+</style>
+</head>
+<body>
+<div class="parent">
+<span class="child"></span>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03 javascript 연산자</title>
+    <script>
+        //산술 연산자 : +, - , *, /, %
+        document.write("산술 연산자<br>");
+        var num1 = 10;
+        var num2 = 6;
+
+        var result = num1 + num2;
+        document.write(result, "<br>");
+
+        result = num1 - num2;
+        document.write(result, "<br>");
+
+        result = num1 * num2;
+        document.write(result, "<br>");
+
+        result = num1 / num2;
+        document.write(result, "<br>");
+        
+        result = num1 % num2;
+        document.write(result, "<br>");
+
+        document.write("<br>");
+        //대입 연산자 : =, +=, -=, *=. /=, %=
+        document.write("대입 연산자<br>");
+        num1 = 10;
+        num2 = 3;
+
+        num1 += num2;
+        document.write(num1, "<br>");
+        num1 -= num2;
+        document.write(num1, "<br>");
+        num1 *= num2;
+        document.write(num1, "<br>");
+        num1 /= num2;
+        document.write(num1, "<br>");
+        num1 %= num2;
+        document.write(num1, "<br>");
+
+        document.write("<br>");
+        //증강 연산자
+        num1 = 6;
+        num2 = 3;
+        document.write("증강연산자<br>");
+
+        num1--;
+        document.write(num1, "<br>");
+        num2++;
+        document.write(num2, "<br>");
+        
+        document.write("<br>");
+        //비교 연산자 : >, <, >=, <=, ==, ===(엄격비교), !=, !==(엄격비교)
+        document.write("비교 연산자<br>");
+        var a = 10;
+        var b = 20;
+        var c = "10";
+        var result;
+
+        result = a < b;
+        document.write(result, "<br>");
+        result = a > b;
+        document.write(result, "<br>");
+        result = a > c;
+        document.write(result, "<br>");
+        result = b > c;
+        document.write(result, "<br>");
+        result = a == c;
+        document.write(result, "<br>");
+        result = a === c;
+        document.write(result, "<br>");
+        result = a !== c;
+        document.write(result, "<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

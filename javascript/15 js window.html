@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15 javascript window</title>
+    <script>
+        /*
+            width : 새 창의 가로 길이
+            height : 새 창의 세로 길이
+            top : 새 창의 y축 위치
+            left : 새 창의 x축 위치
+            scrollbars : 스크롤바 노출 여부
+            locations : url창 노출 여부
+        */
+        function winpop() {
+            window.open("http://naver.com", "winnpop", "width=300, height=300", "scrollbars=no");
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="팝업창" onclick="winpop()">
+</body>
+</html>

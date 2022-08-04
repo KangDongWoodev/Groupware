@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16 javascript html요소</title>
+    <script>
+        function check() {
+            //id로 값 가져오기
+            var id = document.getElementById('id').value;
+            var pw = document.getElementById('password').value;
+            console.log(id);
+            console.log(pw);
+
+            //name으로 값 가져오기
+            id = document.getElementsByName('id')[0].value;
+            pw = document.getElementsByName('password')[0].value;
+            console.log(id);
+            console.log(pw);
+
+            //class로 값 가져오기
+            id = document.getElementsByClassName('id')[0].value;
+            pw = document.getElementsByClassName('password')[0].value;
+            console.log(id);
+            console.log(pw);
+        }
+
+        function validation() {
+            var id = document.getElementById('id').value;
+            var pw = document.getElementById('password').value;
+
+            if(id.length < 5 || id.length >10){
+                alert("아이디를 확인해주세요!");
+                return;
+            } else if(pw.length < 5 || pw.length >10) {
+                alert("비밀번호를 확인해주세요!");
+                return;
+            }
+
+            if(pw == 12345){
+                location.href = "http://naver.com";
+            }else {
+                alert("아이디와 비밀번호가 일치하지 않습니다.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="id">ID</label>
+    <input type="text" name="id" id="id" class="id"><br>
+    <label for="password">PW</label>
+    <input type="password" name="password" id="password" class="password">
+    <input type="button" value="폼 체크" onclick="validation()">
+</body>
+</html>

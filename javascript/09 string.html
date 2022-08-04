@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>09 string</title>
+<script type="text/javascript">
+/*
+charAt(index) : 인덱스에 해당하는 문자를 반환
+indexof("찾을 문자") : 제일먼저 일치하는 문자 인덱스를 반환
+replace("찾을 문자", "바꿀 문자") : 찾을문자랑 매칭된 문자를 찾아서 바꿀문자로 변경(처음 나온것)
+replaceAll("찾을 문자", "바꿀 문자") : 찾을문자랑 매칭된 문자를 찾아서 바꿀문자로 변경(모두)
+split("기준문자") : 기준문자를 잘라서 배열로 반환
+trim() : 앞뒤 공백을 제거
+*/
+*var str="          Hello world"  ;
+console.log(str.charAt(2));
+console.log(str.indexOf("H"));
+console.log(str.replace('o','a'));
+console.log(str.replaceAll('o','a'))
+console.log(str.split(""));
+console.log(str.length);
+console.log(str.trim().length);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

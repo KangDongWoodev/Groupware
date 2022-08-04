@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05 javascript switch</title>
+    <script>
+        var key = prompt("사이트 이름을 입력해주세요");
+        var url;
+        switch(key) {
+            case "구글":
+                url = "www.google.com"; break;
+            case "네이버":
+                url = "www.naver.com"; break;
+            case "다음":
+                url = "www.daum.net"; break;
+            default : 
+                alert("사이트가 없습니다.")
+        }
+
+        console.log(url);
+        if(url) {
+            location.href="http://" + url;
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08 javascript Array</title>
+    <script>
+        /*
+            배열 생성
+            1. var 변수명 = new Array();
+            2. var 변수명 = new Array(값1, 값2, 값3...);
+            3. var 변수명 = [값1, 값2, 값3...];
+
+            배열 함수
+            join(연결문자) : 배열의 객체를 연결문자 기준을 연결하여 문자열로 반환
+            reverse() : 배열을 역순으로 바꿔서 반환
+            sort() : 배열을 오름차순으로 정렬하여 반환
+            length : 배열의 길이
+            pop() : 마지막 인덱스 삭제
+            push(데이터) : 데이터를 마지막 + 1 인덱스에 삽입
+        */
+
+        var arr = [10, "2", true, 5];
+
+        console.log(arr[3]);
+        arr[5] = "hello";
+        for(var i = 0; i <arr.length; i++){
+            console.log(arr[i]);
+        }
+
+        document.write(arr.join('*') +"<br>");
+        document.write(arr.reverse(), "<br>");
+        document.write(arr.sort(), "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

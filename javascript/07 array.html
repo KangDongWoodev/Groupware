@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>07 array</title>
+<script type="text/javascript">
+
+var obj={};
+obj.a =10;
+console.log(obj.a);
+console.log(obj);
+console.log(typeof obj.a);
+
+obj.b ="Hello";
+console.log(obj.b);
+console.log(obj);
+console.log(typeof obj.b);
+
+obj.f=function(){
+	//alert("function 실행");
+	document.write(this.a+"<br>");
+	document.write(this.b+"<br>");
+}
+console.log(obj);
+console.log(typeof obj.f);
+
+obj.f();
+</script>
+</head>
+<body>
+
+</body>
+</html>

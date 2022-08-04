@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07 javascript Object</title>
+    <script>
+        /*
+            자바스크립트 : 내장객체, DOM 객체, 브라우저 객체
+            내장객체(Built in Object)
+            1) Number : 숫자, 지수
+            2) String : 문자열
+            3) Boolean : true, false
+            4) Object : {key:value}
+            5) Array : 배열
+            6) Function : 함수
+            7) Math : 수학 관련 함수
+            8) Date : 날짜, 시간 관련 함수
+            9) JSON : [{"name" : "value"}] -> 클라이언트와 서버 통신을 위한 파일
+            10) 정규표현식 : 유효성 검사를 위한 포맷
+            11) Global : 전역 객체, 모든 소스에서 접근 공유 가능
+        */
+
+        var obj = {};
+        obj.a = 10;
+
+        console.log(obj.a);
+        console.log(obj);
+        // document.write(obj, "<br>");
+        console.log(typeof obj.a);
+
+        obj.b = "Hello";
+
+        console.log(obj.b);
+        console.log(obj);
+        console.log(typeof obj.b);
+        // document.write(obj.b);
+
+        obj.f = function() {
+            document.write(this.a + "<br>");
+            document.write(this.b, "<br>");
+        }
+
+        console.log(obj);
+        console.log(typeof obj.f);
+
+        obj.f();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

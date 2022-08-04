@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>KUSEC</title>
+<script type="text/javascript" src="jquery-3.6.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	//추가 버튼 이벤트 처리
+	$('#addbtn').on('click', function() {
+		$('#group').append('<input type="text"  class="form-control groupname" name="name" value="" placeholder="이곳에 입력하세요."><br>');
+	});
+});
+
+</script>
+
+<style type="text/css">
+	input::placeholder {
+  		color: rgb(222, 222, 222);
+  		font-size: 12px;
+  		font-style: italic;
+  		opacity: 0.5;
+  	}
+</style>
+</head>
+<body>
+
+<form id="councilForm" action="액션명" method="post">
+	<label class="groupname">제목
+		<button id="addbtn" type="button">입력란 추가</button>
+	</label>
+
+	<div id="group">
+		<input type="text" name="name"  placeholder="이곳에 입력하세요."><br>
+	</div>
+</form>
+
+</body>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>14 history</title>
+<script type="text/javascript">
+function goback(){
+	//history : 방문기록
+	/*
+	history.foward() : 앞페이지로 이동
+	history.go(숫자) : 입력한 숫자 만큼 앞뒤로 이동
+	history.length : 방문 기록에 저장된 페이지 수
+	*/
+	//alert('goback() 함수 호출');
+	//history.back(); // 이전 페이지로 이동
+	//history.go(-10);
+	alert(history.length);
+}
+// histroy : 방문기록
+</script>
+</head>
+<body>
+<h1>history 페이지</h1>
+<input type="button" value="이전 페이지로" onclick="goback()">
+</body>
+</html>
